@@ -5,7 +5,7 @@ import Grid from "../Grid/Grid.js"
 function Content() {
     return (
         <div className="content-container">
-            <Grid></Grid>
+            <Grid/>
         </div>
     )
 }
