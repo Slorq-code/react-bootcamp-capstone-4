@@ -1,17 +1,18 @@
-import React from 'react'
-import "./Card.css"
+import React, { Component } from 'react';
 
-const Card = (imgUrl, text) => {
-    return (
-        <div className="card-container">
-           <div className="card-photo">
-                <img src={imgUrl} alt=""/>
-               </div>
-           <div className="card-text">
-               <span>{text}</span>
-               </div>
+import './Card.css';
+
+const Card = (imgUrl, alt, text) => {
+    return ( 
+        <div className='card-container'>
+            <div className='card-image'>
+                <img src={imgUrl.imgUrl} alt={alt} />
+            </div>
+            <div className='card-text'>
+                <span>{text}</span>
+            </div>
         </div>
-    )
+     );
 }
-
-export default Card
+ 
+export default Card;

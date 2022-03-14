@@ -13,9 +13,10 @@
     width: 70%;
 }
 
-.header-logo{
+.header-logo img{
     font-size: 30px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    max-height: 150px;
+    max-width: 100px;
 }
 
 .header-shoppingIcon img{
