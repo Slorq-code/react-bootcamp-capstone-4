@@ -1,0 +1,7 @@
+.Footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7.35vh;
+    background-color: #8971d0;
+}

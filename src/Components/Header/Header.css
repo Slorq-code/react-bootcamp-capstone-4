@@ -1,0 +1,47 @@
+.header-container{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+	background: #adf7d1; 
+}
+
+.header-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 70%;
+}
+
+.header-logo img{
+    font-size: 30px;
+    max-height: 150px;
+    max-width: 100px;
+}
+
+.header-shoppingIcon img{
+    font-size: 30px;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.header-hamburger{
+    font-size: 30px;
+    
+}
+.header-hamburger img{
+    font-size: 30px;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.left-header{
+    width: 33%;
+}
+
+.right-header{
+    width: 66%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
