@@ -4,14 +4,16 @@ import shopping from "../../Utilidades/Shopping.svg"
 import hamburger from "../../Utilidades/Watermelon.svg"
 import logo from "../../Utilidades/Logo.PNG"
 
-function Header() {
+function Header(props) {
     return ( 
         <div className='header-container'>
             <div className='header-parent'>
                 <div className='left-header'>
+                    <button onClick={props.handler()}>
                     <div className='header-logo'>
                     <img src={logo} alt="Me" />
                     </div>
+                    </button>
                 </div>                
                 <div className='right-header'>
                     <div className='header-shoppingIcon'>

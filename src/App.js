@@ -1,8 +1,7 @@
 import './App.css';
 import { useFeaturedBanners } from './utils/hooks/useFeaturedBanners';
-import Header from "./Components/Header/Header.js"
-import Content from "./Components/Content/Content"
-import Footer from "./Components/Footer/Footer.js"
+import HomePage from './Components/HomePage/HomePage';
+
 
 function App() {
   const { data, isLoading } = useFeaturedBanners();
@@ -10,9 +9,7 @@ function App() {
 
   return (
     <div className="App">
-       <Header/>
-       <Content/>
-       <Footer/>
+            <HomePage/>
     </div>
   );
 }
