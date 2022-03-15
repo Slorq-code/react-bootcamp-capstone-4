@@ -28,7 +28,7 @@ function HomePage() {
          //   allProduct = {allProduct}
          //   handler = {() => handler} 
         ///>
-        //<Footer/>
+        //<Footer/ >
          }
         </div>
     )
