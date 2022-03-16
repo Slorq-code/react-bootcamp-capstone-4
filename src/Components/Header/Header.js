@@ -9,7 +9,7 @@ function Header(props) {
         <div className='header-container'>
             <div className='header-parent'>
                 <div className='left-header'>
-                    <button onClick={props.handler()}>
+                    <button onClick={props.handlerAllProducts()}>
                     <div className='header-logo'>
                     <img src={logo} alt="Me" />
                     </div>

@@ -16,8 +16,10 @@ const Content = (props) => {
     
     return ( 
 <div>
-        {props.allProduct?
-          <ProductList/>
+        {props.allProducts?
+          <ProductList 
+          categories={carouselCategories}
+          />
           :
           <div className='content-container'>
           <div className='welcome-container'>
@@ -36,7 +38,7 @@ const Content = (props) => {
                       products ={products}
                   />
               </div>   
-              <button onClick={props.handler()}>
+              <button className="Content-btn" onClick={props.handlerAllProducts()}>
               View all products
               </button>             
           </div>

@@ -6,32 +6,29 @@ import Footer from "../Footer/Footer"
 import GridYO from "../GridYO/GridYO"
 
 
-function HomePage() {
+const HomePage = (props) => {
 
-    const [allProduct, setallProduct] = useState(false);
-    const handler = () => {
-        setallProduct(!allProduct)
-    } 
+    const[allProducts, setAllProducts]= useState(false);
 
+    const handlerAllProducts = () =>{
+        setAllProducts(!allProducts);        
+    };
 
-
-    return (
-        <div className="HomePage-container">
-
-
-        <GridYO/>
-
-        {//<Header
-         //   handler = {() => handler}
-        ///>
-        //<Content
-         //   allProduct = {allProduct}
-         //   handler = {() => handler} 
-        ///>
-        //<Footer/ >
-         }
+    return ( 
+        <div className='home-page'>
+            <Header
+                handlerAllProducts={()=>handlerAllProducts}
+            />
+            <Content
+                allProducts={allProducts}
+                handlerAllProducts={()=>handlerAllProducts}
+            {...props}
+            />
+            <Footer/>
         </div>
-    )
-}
+        
 
-export default HomePage
+     );
+}
+ 
+export default HomePage;
