@@ -1,34 +1,33 @@
 import React from 'react';
 import './Content.css'
-
 import Grid from '../Grid/Grid';
 import CarouselField from './Carousel/Carousel';
 import ProductList from "../ProductList/ProductList"
 import featuredProducts from '../../mocks/es-mx/featured-products.json';
 import banners from '../../mocks/es-mx/featured-banners.json';
 import productsCategories from '../../mocks/es-mx/product-categories.json';
+import Slider from "../Slider/Slider"
 
 const Content = (props) => {
     const products = featuredProducts.results;
     const carouselProducts = banners.results;
     const carouselCategories= productsCategories.results;
-    console.log(props);
+
     
     return ( 
 <div>
         {props.allProducts?
-          <ProductList 
-          categories={carouselCategories}
+
+          <Grid 
+          products ={products}
           />
           :
           <div className='content-container'>
-          <div className='welcome-container'>
               <div className='vertical-carousel'>
-                  <CarouselField
-                      products={carouselProducts}
-                  />
+               <Slider 
+                  products ={carouselProducts}
+               />
               </div>
-          </div>
           <div className='grid-container'>
               <div className='grid-title'>
                   Productos de temporada
@@ -43,13 +42,13 @@ const Content = (props) => {
               </button>             
           </div>
           <div className='final-carousel'>
-              <CarouselField
+              <Slider
                   products={carouselCategories}
               />
           </div>
 
       </div>
-        };
+        }
   </div>
      );
 }

@@ -1,0 +1,44 @@
+.Slider-container {
+    max-width: 100%!;
+}
+.Slider-container img {
+    width: 100%;
+    vertical-align: top;
+}
+.total-Card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonera {
+    justify-content: center;
+    display: flex;
+}
+
+.total {
+    width: 100%;
+    vertical-align: top;
+}
+
+.botonera button {  
+    margin-top: 15px;
+    padding: 5px;
+    outline: none;
+    width: 900px;
+    color: rgb(230, 227, 227);
+    border: 2px solid rgb(230, 227, 227);
+    font-size: 12px;
+    border-radius: 19px;
+    background-color: #1f2235;
+    font-size: 18px;
+    width: 160px;
+    align-items: center;
+    justify-content: center;
+
+}
+.botonera button:hover {
+    background-color: #1f2235;
+    transition: all ease 1s;
+    border: 2px solid #1f2235;
+  }
