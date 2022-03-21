@@ -12,7 +12,18 @@
     height: 100%;
     width: 70%;
 }
+.input-container {
+    display: flex;
+    background-color:white;
+    border-radius: 10px 100px / 120px;
+}
 
+.input-container-text input {
+    padding: 12px 20px;
+    line-height: 55px;
+    justify-content:center;
+    border: none;
+}
 .header-logo img{
     font-size: 30px;
     max-height: 150px;
@@ -23,6 +34,16 @@
     font-size: 30px;
     max-height: 80px;
     max-width: 80px;
+}
+
+.header-Bus:hover {
+   cursor: pointer;
+}
+
+.header-Bus img {
+    font-size: 30px;
+    max-height: 150px;
+    max-width: 100px;
 }
 
 .header-hamburger{
